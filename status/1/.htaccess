@@ -1,4 +1,7 @@
-ErrorDocument 403 http://status.dzb.pw/2/
-ErrorDocument 404 http://status.dzb.pw/2/
-Allow from 35.247.215.136
+ErrorDocument 403 status/2/
+
+ErrorDocument 404 status/2/
+
+Allow from 34.176.80.6
+
 Deny from all

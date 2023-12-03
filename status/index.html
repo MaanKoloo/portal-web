@@ -1,41 +1,35 @@
 <!DOCTYPE html>
-
 <html>
 
-  
-
 <head>
-
   <title>VPN Check</title>
+  <meta http-equiv="refresh" content="3; url=/" />
+  <script>
+    setTimeout(function() {
+      // Obtén la dirección IP del cliente
+      var ipCliente = "<?php echo $_SERVER['REMOTE_ADDR']; ?>";
 
-  <meta http-equiv="refresh" 
+      // Dirección IP esperada para la conexión VPN
+      var ipEsperada = '32.123.32.12';
 
-        content="3; url = /status/1" />
-
+      // Verifica si la dirección IP del cliente coincide con la esperada
+      if (ipCliente === ipEsperada) {
+        window.location.href = "/status/1";
+      } else {
+        window.location.href = "/status/2";
+      }
+    }, 5000); // Redirige después de 5 segundos
+  </script>
 </head>
 
-  
-
 <body>
-
   <h1 style="text-align:center;color:green;">
-
-    Verificando conexion VPN
-
+    Verificando conexión VPN
   </h1>
 
-  
-
   <p style="text-align:center;">
-
-    Seras redirigido en 3 segundos
-
+    Serás redirigido en 3 segundos
   </p>
-
-  
-
 </body>
-
-  
 
 </html>

@@ -3,7 +3,7 @@
 
 <head>
   <title>VPN Check</title>
-  <meta http-equiv="refresh" content="3; url=/" />
+  <meta http-equiv="refresh" content="5; url=/" />
   <script>
     setTimeout(function() {
       // Obtén la dirección IP del cliente
@@ -13,7 +13,7 @@
       var ipEsperada = '32.123.32.12';
 
       // Verifica si la dirección IP del cliente coincide con la esperada
-      if (ipCliente === ipEsperada) {
+      if (ipCliente.trim() === ipEsperada.trim()) {
         window.location.href = "/status/1";
       } else {
         window.location.href = "/status/2";
@@ -28,7 +28,7 @@
   </h1>
 
   <p style="text-align:center;">
-    Serás redirigido en 3 segundos
+    Serás redirigido en 5 segundos
   </p>
 </body>
 

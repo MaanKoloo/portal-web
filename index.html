@@ -3,17 +3,20 @@
 <head>
     <title>NiiKoloo</title>
     <meta charset="UTF-8">
+    <!-- Discord Emebed -->
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta property="og:title" content="https://maankoloo.github.io/">
-    <meta property="og:description" content="Basic Portal HTML">
+    <meta property="og:title" content="Website Link Here">
+    <meta property="og:description" content="Description Here">
     <meta name="robots" content="index, follow">
     <meta property="og:image" content="Profile pic link here">
     <meta name="theme-color" content="#ff0000"> <!-- Left side bar color on embed - Default Red-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <script  src="assets/js/time.js"></script>
+	<script  src="assets/js/login.js"></script>
 </head>
 <body onload="startTime()" onselectstart="return false">
+
 <!-- --------------------- Video -------------------- -->
     <video autoplay loop>
         <source src="space.mp4" type="video/mp4">
@@ -33,7 +36,7 @@
   </div>
 <!-- ----------------- Descripption ----------------- -->
   <div class="desc">
-    Discord: niikoloo
+    Discord: NiiKoloo#4775
   </div>
 <!-- ---------------------- PfP --------------------- -->
   <div>
@@ -42,11 +45,16 @@
       <div id="time" class="time"></div>
     </pfp>
   </div>
+  
+<!-- Contenido del modal -->
+<div id="modalContainer" class="modal-container"></div>
+  
 <!-- --------------- Spacing / Links ---------------- -->
   <div class="spc">
     <a href="https://maankoloo.github.io/vpn.msi" target="_blank"><button class="btn">Cliente VPN<span class="bg"></span></button></a>
     
-	<a href="http://34.176.80.6:8080/" target="_blank"><button class="btn">Iniciar Sesión<span class="bg"></span></button></a>
+	<a href="javascript:void(0);" onclick="loadModal()">
+    <button class="btn">Iniciar Sesión<span class="bg"></span></button></a>
     <br>
     <a href="https://maankoloo.github.io/status" target="_blank"> <button class="btn">Verificar<span class="bg"></span></button></a>
    <a href="https://maankoloo.github.io/jkdsakjdas" target="_blank"><button class="btn">404 ERROR TEST<span class="bg"></span></button></a>
